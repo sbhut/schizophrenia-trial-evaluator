@@ -55,7 +55,7 @@ def create_schizophrenia_prompt(patient_data):
 You are an AI medical assistant evaluating patients for a clinical trial. Your task is to determine whether each patient meets the inclusion criterion based on the provided data.
 
 Inclusion criteria:
-{inclusion_criteria[4]}
+{inclusion_criteria}
 
 Patient Data:
 {patient_info}
@@ -158,6 +158,6 @@ for subject_id in unique_subject_ids:
 
 # Save results to a CSV file
 results_df = pd.DataFrame(results)
-results_df.to_csv('Fourth_Inclusion_Criteria1.csv', index=False)
+results_df.to_csv('Inclusion_Criteria.csv', index=False)
 
 print(f"Total tokens used for the input data of {num_patients} patients: {total_tokens}")
