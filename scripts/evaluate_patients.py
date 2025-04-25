@@ -84,7 +84,7 @@ Justification: [Brief explanation based on patient data and medical knowledge]
 
 # Function to count tokens in a prompt using tiktoken
 def count_tokens(prompt):
-    encoding = tiktoken.encoding_for_model("gpt-4")  # Use "gpt-4" as a proxy for DeepSeek token counting
+    encoding = tiktoken.encoding_for_model("gpt-4")  
     return len(encoding.encode(prompt))
 
 # Specify the number of patients to check
